@@ -1,0 +1,48 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "secure-app",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-21",
+	"compatibility_flags": ["nodejs_compat"],
+	"upload_source_maps": false,
+	"preview_urls": false,
+	// Structured JSON logs (src/log.ts) are read in the Workers Logs dashboard.
+	"observability": {
+		"enabled": true,
+		"logs": { "enabled": true },
+	},
+	// ENVIRONMENT is deliberately not set here. Unset means production. Set it
+	// to "development" in .dev.vars for local work only; the test suite sets "test".
+	// The gate has no setting that turns it off.
+	"vars": {
+		// Team ID, a period, and the app's signing identifier (bundle id).
+		"ATTEST_APP_ID": "TEAMID1234.com.example.secureapp",
+		// "required" (SSO with MFA at enrolment) or exactly "off". Anything else is "required".
+		"ATTEST_MFA": "required",
+		// The acr values enrolment accepts, comma-separated. Unset is urn:acr:mfa.
+		// "ATTEST_MFA_ACR": "urn:acr:mfa",
+		// "true" refuses keys without Apple's validation category and bundle version.
+		// "ATTEST_REQUIRE_EXTENSIONS": "true",
+		// Lowest apple_bundle_version_01 accepted, dotted numbers.
+		// "ATTEST_MIN_BUNDLE_VERSION": "1.0",
+		// The OIDC provider and the app's public client id (authorisation code + PKCE).
+		"OIDC_ISSUER": "https://metaphor.id",
+		"OIDC_CLIENT_ID": "replace-with-the-app-client-id",
+		// The org:group an account must be in, as the provider writes it in the groups claim.
+		"ACCESS_GROUP": "replace-with-org-id:replace-with-group-id",
+	},
+	// APNS_KEY_P8, APNS_KEY_ID and APNS_TEAM_ID are secrets: wrangler secret put.
+	"kv_namespaces": [{ "binding": "KV", "id": "replace-with-kv-namespace-id" }],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "secure-app",
+			"database_id": "replace-with-d1-database-id",
+			"migrations_dir": "migrations",
+		},
+	],
+	"durable_objects": {
+		"bindings": [{ "name": "LIVE_HUB", "class_name": "LiveHub" }],
+	},
+	"migrations": [{ "tag": "v1", "new_sqlite_classes": ["LiveHub"] }],
+}

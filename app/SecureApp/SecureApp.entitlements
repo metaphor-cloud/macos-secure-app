@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Attest on macOS: the key Apple's Mac profiles grant (the iOS appattest-environment key gets the app killed on macOS). The environment follows the profile: development profiles give development keys, which only a development Worker accepts. -->
+	<key>com.apple.developer.devicecheck.app-attest-opt-in</key>
+	<array>
+		<string>CDhash</string>
+	</array>
+	<!-- The app and team identity the provisioning profile grants; keychain-access-groups and App Attest need them. -->
+	<key>com.apple.application-identifier</key>
+	<string>$(AppIdentifierPrefix)com.example.secureapp</string>
+	<key>com.apple.developer.team-identifier</key>
+	<string>TEAMID1234</string>
+	<!-- Push notifications. On macOS the key carries the com.apple.developer prefix. Release builds get production device tokens. -->
+	<key>com.apple.developer.aps-environment</key>
+	<string>production</string>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.network.server</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.files.downloads.read-write</key>
+	<true/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>$(AppIdentifierPrefix)com.example.secureapp</string>
+	</array>
+</dict>
+</plist>

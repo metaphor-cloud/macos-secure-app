@@ -1,0 +1,132 @@
+{
+  "version": "secure-app-v1",
+  "sha256": [
+    {
+      "name": "the body in the first clientData vector",
+      "input": "{\"title\":\"Hello\",\"body\":\"First note\"}",
+      "sha256": "eed08836850f8f1c70d8b741ecf21a865dd5f6b29d157e23bc7d43d22acd2c6b"
+    },
+    {
+      "name": "the bearer token in every clientData vector",
+      "input": "eyJ.test.token",
+      "sha256": "fbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8"
+    },
+    {
+      "name": "no body",
+      "input": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "non-ASCII text, hashed as UTF-8",
+      "input": "café ☕",
+      "sha256": "a7e46d54289812af2aa5b08c2fbab5d24bccfc6586df55b187272c8a2a31c85f"
+    }
+  ],
+  "clientData": [
+    {
+      "name": "POST with a query and a body",
+      "parts": {
+        "appId": "TEAMID1234.com.example.secureapp",
+        "keyId": "zgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=",
+        "tokenSha256": "fbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8",
+        "time": 1792800000000,
+        "nonce": "n0nce_0123456789-AB",
+        "challenge": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+        "method": "post",
+        "pathAndQuery": "/api/notes?dry=1",
+        "bodySha256": "eed08836850f8f1c70d8b741ecf21a865dd5f6b29d157e23bc7d43d22acd2c6b"
+      },
+      "clientData": "secure-app-v1\nTEAMID1234.com.example.secureapp\nzgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=\nPOST\n/api/notes?dry=1\need08836850f8f1c70d8b741ecf21a865dd5f6b29d157e23bc7d43d22acd2c6b\nfbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8\n1792800000000\nn0nce_0123456789-AB\nAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+      "clientDataSha256": "2a29dd83d557efb980ce363e16962d75e6d6187dc60b78c1db2c8a0e754307a5"
+    },
+    {
+      "name": "GET with no body",
+      "parts": {
+        "appId": "TEAMID1234.com.example.secureapp",
+        "keyId": "zgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=",
+        "tokenSha256": "fbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8",
+        "time": 1792800000000,
+        "nonce": "n0nce_0123456789-AB",
+        "challenge": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+        "method": "GET",
+        "pathAndQuery": "/api/me",
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "clientData": "secure-app-v1\nTEAMID1234.com.example.secureapp\nzgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=\nGET\n/api/me\ne3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\nfbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8\n1792800000000\nn0nce_0123456789-AB\nAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+      "clientDataSha256": "1043520e2d5052ec9da2c8b39a79fe4d20cfd511b28264415f62d4ce43eaf15a"
+    },
+    {
+      "name": "the session path with the bootstrap challenge",
+      "parts": {
+        "appId": "TEAMID1234.com.example.secureapp",
+        "keyId": "zgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=",
+        "tokenSha256": "fbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8",
+        "time": 1792800000000,
+        "nonce": "n0nce_0123456789-AB",
+        "challenge": "bootstrap",
+        "method": "GET",
+        "pathAndQuery": "/api/attest/session",
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "clientData": "secure-app-v1\nTEAMID1234.com.example.secureapp\nzgSY9YSD+7TaDXssY6WlOPVS1K3Lmk+pFhlcSWE+ZV0=\nGET\n/api/attest/session\ne3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\nfbef271d2ab4fb5e1150254d610a59132affb74485dd593eefd5f81f46a9d8d8\n1792800000000\nn0nce_0123456789-AB\nbootstrap",
+      "clientDataSha256": "a237447028a8fc15b925566e992456fe8a6ba89abaca0d6aa090e427931ac4c6"
+    }
+  ],
+  "canonicalRequestTarget": [
+    {
+      "name": "plain path",
+      "input": "/api/me",
+      "expected": "/api/me"
+    },
+    {
+      "name": "path with a query",
+      "input": "/api/notes?limit=10&q=a",
+      "expected": "/api/notes?limit=10&q=a"
+    },
+    {
+      "name": "a quote in the query becomes %27",
+      "input": "/api/notes?q=it's",
+      "expected": "/api/notes?q=it%27s"
+    },
+    {
+      "name": "an empty query goes",
+      "input": "/api/notes?",
+      "expected": "/api/notes"
+    },
+    {
+      "name": "a space in the query becomes %20",
+      "input": "/api/notes?q=a b",
+      "expected": "/api/notes?q=a%20b"
+    },
+    {
+      "name": "a space in the path becomes %20",
+      "input": "/api/notes/a b/export",
+      "expected": "/api/notes/a%20b/export"
+    },
+    {
+      "name": "the fragment is dropped",
+      "input": "/api/notes?q=a#top",
+      "expected": "/api/notes?q=a"
+    },
+    {
+      "name": "dot segments are resolved",
+      "input": "/api/notes/../me",
+      "expected": "/api/me"
+    },
+    {
+      "name": "existing percent escapes are kept as written",
+      "input": "/api/notes?q=%7e%7E",
+      "expected": "/api/notes?q=%7e%7E"
+    },
+    {
+      "name": "non-ASCII in the path is percent-encoded",
+      "input": "/api/notes/café",
+      "expected": "/api/notes/caf%C3%A9"
+    },
+    {
+      "name": "a plus in the query is kept",
+      "input": "/api/notes?q=a+b",
+      "expected": "/api/notes?q=a+b"
+    }
+  ]
+}

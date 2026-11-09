@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		022E2B977417FA50D4B8B20C /* AppMCPTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FBA783A0434FE3263CBA5B /* AppMCPTools.swift */; };
+		09744B406105C092895A025B /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C12905B61A2B6A512519 /* Log.swift */; };
+		10133B074C156C9289FBBA9E /* Attester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E17B39FEBA9BAEA63B9FE4 /* Attester.swift */; };
+		151AAB9C5933B2FBD746F813 /* AppNavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F62FCE98183B0A792D206 /* AppNavTests.swift */; };
+		16932837955E51CAE01480A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3F4A2D10700ED822B9E10D /* Assets.xcassets */; };
+		1EDDC157DDB7DCEBB17F956A /* Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E0C1F4EE9288EC4D6062B /* Downloads.swift */; };
+		1F68A4D9674ABFB4DDB46826 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB8545AF11A31F47FEF9AF2 /* Copy.swift */; };
+		1F8B3EFF5ED6BAFD7912648B /* SecureAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879861562F5EEDAB5A8A4BF1 /* SecureAppApp.swift */; };
+		219607C8453D8F4468B94D25 /* LiveSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78106A749DD5014978AB754 /* LiveSocket.swift */; };
+		243F85EA93B987BD3C0391FB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF611A664663A4DC532B0C54 /* WebKit.framework */; };
+		2523F8426E59DCAA96C93AB1 /* MCPHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A9318537409B56670A8F3 /* MCPHTTP.swift */; };
+		261E1CFA9D8AD0D1F3D2B0BE /* AppLockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B469DF771A03C3A5B029B304 /* AppLockManager.swift */; };
+		340C7F4B8A5BDDF5B5FAFFFA /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965962643A2EEE38F5E7D1D /* PushNotifications.swift */; };
+		38502C1F95AB2999DF682009 /* SerialGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1141F2A01759A37A22C290 /* SerialGate.swift */; };
+		44B9069F3217E65FB8C6EAC9 /* LockAndStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6BB781C4EA3B27B4B5781E /* LockAndStoreTests.swift */; };
+		49779E597D0C3B934368E0EA /* ContractDriftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A0C9CB3919E953C88FF9CC /* ContractDriftTests.swift */; };
+		49E05DC8776E8D9B9A7551CA /* BridgeValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE1D97A6BEC7994304B7A8 /* BridgeValidationTests.swift */; };
+		5152032D186FB8CC2672967F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39EF14364A4A9703F3D5846 /* LocalAuthentication.framework */; };
+		59ACAF44E189A6CA44FE2DF8 /* SecureAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D927A8063603A4963F973 /* SecureAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59F4F8E3DDE13DF3EDAFFA26 /* WebAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00EB8E998414F3D198F571 /* WebAuthenticator.swift */; };
+		5C8D1C098F33EA98270366AD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CCC815CC4880D2BF7989CF /* SettingsView.swift */; };
+		5EBCF83B416ACFA35E9FBB5D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BC5585C9B63048A01142C /* AppModel.swift */; };
+		64AB61C259D1F73B3F9E74C9 /* MCPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE512FF96CA13BADC9041D1 /* MCPController.swift */; };
+		65DA0417143ADAD8A458125F /* AppBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F260E8D20FECF39363F0EE /* AppBridge.swift */; };
+		675A67A919583682D7D30F00 /* SecureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB81613A788A86097C15D09 /* SecureStore.swift */; };
+		69FD0D3FE219E2C18BC3B077 /* AppAttestDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854BB11EA8C8C1E836F9D52E /* AppAttestDevice.swift */; };
+		6F81908D210512F2F89F83C1 /* GoldenVectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA50F5E351843587B9DB4D /* GoldenVectorTests.swift */; };
+		709B2C9CBCE34E89ED3A428F /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73341C5B840429179EB4938 /* AppTab.swift */; };
+		79037E6598623BB21C254908 /* AppMCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AADA72F3D83ABDF38A7F5 /* AppMCPHandler.swift */; };
+		8176C3DAB45588FBD5A82B24 /* RecoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC23B101BAF0AA25A7734A /* RecoveryTests.swift */; };
+		8428D17E696E4FD4A097CF0D /* BridgeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111EFCB7F1E6D5DFE4C3138 /* BridgeHandler.swift */; };
+		84B9293671537DC44EB264A3 /* ForbiddenRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C36AA42E10E976A9E01C950 /* ForbiddenRecovery.swift */; };
+		8935E4C856B7CE7D6840ECB4 /* AppWindowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050C628456094BED280653E3 /* AppWindowContent.swift */; };
+		A0BD6467797FA8EF527ADBA9 /* SecureAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D927A8063603A4963F973 /* SecureAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3BF301D66BD0E18C741228B /* SecureAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D927A8063603A4963F973 /* SecureAppKit.framework */; };
+		A8D9E0499387969D8B27B93F /* DeviceCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A06B70BFD64A6110212C3B /* DeviceCheck.framework */; };
+		AB6F8D80B2CB179F43EC6E8F /* AppNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE903EA159C58A53A5D92E /* AppNav.swift */; };
+		B42AE493F1038CA9A764A997 /* AppPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0638D187AE74966205FA078B /* AppPush.swift */; };
+		B86B1C50F0F08609CB6D98BC /* HTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1082580F4946BC680221A070 /* HTTPTransport.swift */; };
+		BA4A4A435BF2F23BB312424F /* AppMCPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A249D3E6D1151CB99DA58FF /* AppMCPTests.swift */; };
+		BF745F555399921DD24A611B /* AppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C712C54EA95FF8E6B50605B /* AppClient.swift */; };
+		D1C021DCEC5CFE957DFF928A /* LockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F621E83D77179E0D3636B /* LockController.swift */; };
+		DAC628DEC6BA49475D805E9D /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3829874BA1110E3DD72B /* WebController.swift */; };
+		E45432087001B28703BEADF1 /* Fakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7FE228898779B250161FF8 /* Fakes.swift */; };
+		E75C794EA33A020B59CAD022 /* NativeLoadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CDB1457A539DFCA53DEB9 /* NativeLoadHandler.swift */; };
+		E93FDAF0F66CE4B596EA2D1A /* LocalMCPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09277D145F864EE8E1DC33B /* LocalMCPServer.swift */; };
+		EB3B42230BF38D12297EDC59 /* OIDC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E29506CAE4125084C5BDEB6 /* OIDC.swift */; };
+		F1AAA51CFE36B9A23CC72F57 /* AppRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012A6913686AD98D01358EC /* AppRequest.swift */; };
+		F1DD6BDBD53A11E6AD07E1C7 /* PushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A732146B2F4629DAE93520B /* PushTests.swift */; };
+		F4B6901D57801FFDAED92A44 /* SecureAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D927A8063603A4963F973 /* SecureAppKit.framework */; };
+		F59C6CB71240415A7D47CB9B /* AppSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D837A1B13D2A51E5FB504C9 /* AppSchemeHandler.swift */; };
+		FB66607A18790595CC8B80B9 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E8E2B915961DD336549A6 /* AuthenticationServices.framework */; };
+		FBF9BB94E9C3083168938191 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A3239166BE528743B170F /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BB46D3751B86DBC28A48B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA9EADF85A6AF7D36B1DA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AEE59F4F4BCF745352C0DDF;
+			remoteInfo = SecureAppKit;
+		};
+		98A83BFB4D41A3272428740F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA9EADF85A6AF7D36B1DA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AEE59F4F4BCF745352C0DDF;
+			remoteInfo = SecureAppKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03F603918E726D3802E166E7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				59ACAF44E189A6CA44FE2DF8 /* SecureAppKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179EB6C18A7FB487ED3B1F89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0BD6467797FA8EF527ADBA9 /* SecureAppKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050C628456094BED280653E3 /* AppWindowContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowContent.swift; sourceTree = "<group>"; };
+		0638D187AE74966205FA078B /* AppPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPush.swift; sourceTree = "<group>"; };
+		0C5BC5585C9B63048A01142C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		0D837A1B13D2A51E5FB504C9 /* AppSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchemeHandler.swift; sourceTree = "<group>"; };
+		1082580F4946BC680221A070 /* HTTPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTransport.swift; sourceTree = "<group>"; };
+		10F260E8D20FECF39363F0EE /* AppBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBridge.swift; sourceTree = "<group>"; };
+		14BE1D97A6BEC7994304B7A8 /* BridgeValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeValidationTests.swift; sourceTree = "<group>"; };
+		189E8E2B915961DD336549A6 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		1BCA50F5E351843587B9DB4D /* GoldenVectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenVectorTests.swift; sourceTree = "<group>"; };
+		1C712C54EA95FF8E6B50605B /* AppClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClient.swift; sourceTree = "<group>"; };
+		292E0C1F4EE9288EC4D6062B /* Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloads.swift; sourceTree = "<group>"; };
+		2A249D3E6D1151CB99DA58FF /* AppMCPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMCPTests.swift; sourceTree = "<group>"; };
+		31E9D9F8CA0BD80D8F337B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3D7F62FCE98183B0A792D206 /* AppNavTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavTests.swift; sourceTree = "<group>"; };
+		3E29506CAE4125084C5BDEB6 /* OIDC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OIDC.swift; sourceTree = "<group>"; };
+		3E3F4A2D10700ED822B9E10D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EEFA8D4BAA38BBCEAEAB7F3 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		404A3239166BE528743B170F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		46CCC815CC4880D2BF7989CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5111EFCB7F1E6D5DFE4C3138 /* BridgeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeHandler.swift; sourceTree = "<group>"; };
+		5A732146B2F4629DAE93520B /* PushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTests.swift; sourceTree = "<group>"; };
+		783AADA72F3D83ABDF38A7F5 /* AppMCPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMCPHandler.swift; sourceTree = "<group>"; };
+		7AB8545AF11A31F47FEF9AF2 /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
+		7C36AA42E10E976A9E01C950 /* ForbiddenRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForbiddenRecovery.swift; sourceTree = "<group>"; };
+		7C7FE228898779B250161FF8 /* Fakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fakes.swift; sourceTree = "<group>"; };
+		854BB11EA8C8C1E836F9D52E /* AppAttestDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAttestDevice.swift; sourceTree = "<group>"; };
+		879861562F5EEDAB5A8A4BF1 /* SecureAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAppApp.swift; sourceTree = "<group>"; };
+		89FE903EA159C58A53A5D92E /* AppNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNav.swift; sourceTree = "<group>"; };
+		8A1141F2A01759A37A22C290 /* SerialGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialGate.swift; sourceTree = "<group>"; };
+		8A417DF96A662CF0384BD57E /* SecureAppKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureAppKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4CDB1457A539DFCA53DEB9 /* NativeLoadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeLoadHandler.swift; sourceTree = "<group>"; };
+		9012A6913686AD98D01358EC /* AppRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRequest.swift; sourceTree = "<group>"; };
+		925A9318537409B56670A8F3 /* MCPHTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPHTTP.swift; sourceTree = "<group>"; };
+		A0E17B39FEBA9BAEA63B9FE4 /* Attester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attester.swift; sourceTree = "<group>"; };
+		B09277D145F864EE8E1DC33B /* LocalMCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMCPServer.swift; sourceTree = "<group>"; };
+		B469DF771A03C3A5B029B304 /* AppLockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockManager.swift; sourceTree = "<group>"; };
+		B4A7B5B63200C4FBF5BB3C4C /* SecureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC00EB8E998414F3D198F571 /* WebAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthenticator.swift; sourceTree = "<group>"; };
+		BD0A3829874BA1110E3DD72B /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
+		BFB81613A788A86097C15D09 /* SecureStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStore.swift; sourceTree = "<group>"; };
+		C0FBA783A0434FE3263CBA5B /* AppMCPTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMCPTools.swift; sourceTree = "<group>"; };
+		C39EF14364A4A9703F3D5846 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C73341C5B840429179EB4938 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		C78106A749DD5014978AB754 /* LiveSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSocket.swift; sourceTree = "<group>"; };
+		CF611A664663A4DC532B0C54 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CF7F621E83D77179E0D3636B /* LockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockController.swift; sourceTree = "<group>"; };
+		D965962643A2EEE38F5E7D1D /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		DCE512FF96CA13BADC9041D1 /* MCPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPController.swift; sourceTree = "<group>"; };
+		EA6BB781C4EA3B27B4B5781E /* LockAndStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockAndStoreTests.swift; sourceTree = "<group>"; };
+		EB6D927A8063603A4963F973 /* SecureAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecureAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A0C9CB3919E953C88FF9CC /* ContractDriftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDriftTests.swift; sourceTree = "<group>"; };
+		F5A06B70BFD64A6110212C3B /* DeviceCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceCheck.framework; path = System/Library/Frameworks/DeviceCheck.framework; sourceTree = SDKROOT; };
+		F5A4C12905B61A2B6A512519 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		FCAC23B101BAF0AA25A7734A /* RecoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		681ACFA8C0DCF8E6658DFB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3BF301D66BD0E18C741228B /* SecureAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7408A32F7E110078E9AA78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6901D57801FFDAED92A44 /* SecureAppKit.framework in Frameworks */,
+				A8D9E0499387969D8B27B93F /* DeviceCheck.framework in Frameworks */,
+				243F85EA93B987BD3C0391FB /* WebKit.framework in Frameworks */,
+				5152032D186FB8CC2672967F /* LocalAuthentication.framework in Frameworks */,
+				FB66607A18790595CC8B80B9 /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187C43C317A4C0E58E736E1A /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				050C628456094BED280653E3 /* AppWindowContent.swift */,
+				7AB8545AF11A31F47FEF9AF2 /* Copy.swift */,
+				404A3239166BE528743B170F /* RootView.swift */,
+				46CCC815CC4880D2BF7989CF /* SettingsView.swift */,
+			);
+			path = UX;
+			sourceTree = "<group>";
+		};
+		1D43D9CC7B7C7ACC17F160C7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3E29506CAE4125084C5BDEB6 /* OIDC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		42A56586E3CDEA52A42518A4 /* Attest */ = {
+			isa = PBXGroup;
+			children = (
+				A0E17B39FEBA9BAEA63B9FE4 /* Attester.swift */,
+			);
+			path = Attest;
+			sourceTree = "<group>";
+		};
+		4F9D6BA476ECD3A9CD8F84DC /* Attest */ = {
+			isa = PBXGroup;
+			children = (
+				854BB11EA8C8C1E836F9D52E /* AppAttestDevice.swift */,
+			);
+			path = Attest;
+			sourceTree = "<group>";
+		};
+		515B6A7BE1284FFE852DA22D /* SecureApp */ = {
+			isa = PBXGroup;
+			children = (
+				31E9D9F8CA0BD80D8F337B17 /* Info.plist */,
+				69602C0659BD46E1A86007AE /* App */,
+				4F9D6BA476ECD3A9CD8F84DC /* Attest */,
+				ECD112C59138B32262EA7BC5 /* Auth */,
+				BE6C000315DB9151DB036266 /* Live */,
+				B2A0444D7369D2C1656CE5BC /* Lock */,
+				69AC910F8399CBBA6E9778A8 /* MCP */,
+				8E08266F65AEA84C340C98F3 /* Resources */,
+				187C43C317A4C0E58E736E1A /* UX */,
+				61562BEFB9994F0F4F78A996 /* Web */,
+			);
+			path = SecureApp;
+			sourceTree = "<group>";
+		};
+		57621DFD79D9D7A64DC63820 /* Signing */ = {
+			isa = PBXGroup;
+			children = (
+				1C712C54EA95FF8E6B50605B /* AppClient.swift */,
+				7C36AA42E10E976A9E01C950 /* ForbiddenRecovery.swift */,
+				8A1141F2A01759A37A22C290 /* SerialGate.swift */,
+			);
+			path = Signing;
+			sourceTree = "<group>";
+		};
+		5D1758E204F1347C6D44BA71 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1082580F4946BC680221A070 /* HTTPTransport.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		61562BEFB9994F0F4F78A996 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				0D837A1B13D2A51E5FB504C9 /* AppSchemeHandler.swift */,
+				5111EFCB7F1E6D5DFE4C3138 /* BridgeHandler.swift */,
+				292E0C1F4EE9288EC4D6062B /* Downloads.swift */,
+				8E4CDB1457A539DFCA53DEB9 /* NativeLoadHandler.swift */,
+				BD0A3829874BA1110E3DD72B /* WebController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		66B48F7C9CB66BFD30F21BCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189E8E2B915961DD336549A6 /* AuthenticationServices.framework */,
+				F5A06B70BFD64A6110212C3B /* DeviceCheck.framework */,
+				C39EF14364A4A9703F3D5846 /* LocalAuthentication.framework */,
+				CF611A664663A4DC532B0C54 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69602C0659BD46E1A86007AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C5BC5585C9B63048A01142C /* AppModel.swift */,
+				C73341C5B840429179EB4938 /* AppTab.swift */,
+				D965962643A2EEE38F5E7D1D /* PushNotifications.swift */,
+				879861562F5EEDAB5A8A4BF1 /* SecureAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69AC910F8399CBBA6E9778A8 /* MCP */ = {
+			isa = PBXGroup;
+			children = (
+				B09277D145F864EE8E1DC33B /* LocalMCPServer.swift */,
+				DCE512FF96CA13BADC9041D1 /* MCPController.swift */,
+			);
+			path = MCP;
+			sourceTree = "<group>";
+		};
+		73FE249FED525952555E45C1 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BFB81613A788A86097C15D09 /* SecureStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		78C6FBC2B6B594B6C6F7314B /* SecureAppKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A249D3E6D1151CB99DA58FF /* AppMCPTests.swift */,
+				3D7F62FCE98183B0A792D206 /* AppNavTests.swift */,
+				14BE1D97A6BEC7994304B7A8 /* BridgeValidationTests.swift */,
+				F1A0C9CB3919E953C88FF9CC /* ContractDriftTests.swift */,
+				7C7FE228898779B250161FF8 /* Fakes.swift */,
+				1BCA50F5E351843587B9DB4D /* GoldenVectorTests.swift */,
+				EA6BB781C4EA3B27B4B5781E /* LockAndStoreTests.swift */,
+				5A732146B2F4629DAE93520B /* PushTests.swift */,
+				FCAC23B101BAF0AA25A7734A /* RecoveryTests.swift */,
+			);
+			path = SecureAppKitTests;
+			sourceTree = "<group>";
+		};
+		8AEA0EA332B1E426AAE42E6C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFA8D4BAA38BBCEAEAB7F3 /* Shared.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8E08266F65AEA84C340C98F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E3F4A2D10700ED822B9E10D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93CBF3F0D4EC8FE40F97CA52 /* MCP */ = {
+			isa = PBXGroup;
+			children = (
+				783AADA72F3D83ABDF38A7F5 /* AppMCPHandler.swift */,
+				C0FBA783A0434FE3263CBA5B /* AppMCPTools.swift */,
+				925A9318537409B56670A8F3 /* MCPHTTP.swift */,
+			);
+			path = MCP;
+			sourceTree = "<group>";
+		};
+		A72A2175684D256A827F740E = {
+			isa = PBXGroup;
+			children = (
+				8AEA0EA332B1E426AAE42E6C /* Config */,
+				515B6A7BE1284FFE852DA22D /* SecureApp */,
+				D8BC64EB3950C5D4DE9412EF /* SecureAppKit */,
+				78C6FBC2B6B594B6C6F7314B /* SecureAppKitTests */,
+				66B48F7C9CB66BFD30F21BCD /* Frameworks */,
+				CD37AB101CF23DE97B41345E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2A0444D7369D2C1656CE5BC /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F621E83D77179E0D3636B /* LockController.swift */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		BE6C000315DB9151DB036266 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				C78106A749DD5014978AB754 /* LiveSocket.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		CD37AB101CF23DE97B41345E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4A7B5B63200C4FBF5BB3C4C /* SecureApp.app */,
+				EB6D927A8063603A4963F973 /* SecureAppKit.framework */,
+				8A417DF96A662CF0384BD57E /* SecureAppKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3AFFFB7AC84EB2B2B220528 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				B469DF771A03C3A5B029B304 /* AppLockManager.swift */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		D8BC64EB3950C5D4DE9412EF /* SecureAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5A4C12905B61A2B6A512519 /* Log.swift */,
+				5D1758E204F1347C6D44BA71 /* API */,
+				42A56586E3CDEA52A42518A4 /* Attest */,
+				1D43D9CC7B7C7ACC17F160C7 /* Auth */,
+				EC7437D8C73FD30B0EDB45DB /* Contract */,
+				D3AFFFB7AC84EB2B2B220528 /* Lock */,
+				93CBF3F0D4EC8FE40F97CA52 /* MCP */,
+				57621DFD79D9D7A64DC63820 /* Signing */,
+				73FE249FED525952555E45C1 /* Storage */,
+			);
+			path = SecureAppKit;
+			sourceTree = "<group>";
+		};
+		EC7437D8C73FD30B0EDB45DB /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				10F260E8D20FECF39363F0EE /* AppBridge.swift */,
+				89FE903EA159C58A53A5D92E /* AppNav.swift */,
+				0638D187AE74966205FA078B /* AppPush.swift */,
+				9012A6913686AD98D01358EC /* AppRequest.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		ECD112C59138B32262EA7BC5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BC00EB8E998414F3D198F571 /* WebAuthenticator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AEE59F4F4BCF745352C0DDF /* SecureAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF9807ED104500F7C37E530 /* Build configuration list for PBXNativeTarget "SecureAppKit" */;
+			buildPhases = (
+				CCE8F05059B81B2CEDD979AB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureAppKit;
+			packageProductDependencies = (
+			);
+			productName = SecureAppKit;
+			productReference = EB6D927A8063603A4963F973 /* SecureAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5AA4CD2B7604E55B5E0D3DA0 /* SecureAppKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34A3AA19998D2AA7B9AA3B76 /* Build configuration list for PBXNativeTarget "SecureAppKitTests" */;
+			buildPhases = (
+				948E18600A32E8FBDD262E0D /* Sources */,
+				681ACFA8C0DCF8E6658DFB63 /* Frameworks */,
+				179EB6C18A7FB487ED3B1F89 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF61455C2A5BBE4CF7351D5F /* PBXTargetDependency */,
+			);
+			name = SecureAppKitTests;
+			packageProductDependencies = (
+			);
+			productName = SecureAppKitTests;
+			productReference = 8A417DF96A662CF0384BD57E /* SecureAppKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69A8B40E9155C32BD6E465DC /* SecureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE40649BA0F315CA495D174D /* Build configuration list for PBXNativeTarget "SecureApp" */;
+			buildPhases = (
+				ADA63606136D5E86D4CB0E43 /* Bundle the web app */,
+				B1830F2C634C6403E6E38473 /* Sources */,
+				BB6E8E1DA382BABAFABDCA56 /* Resources */,
+				C7408A32F7E110078E9AA78A /* Frameworks */,
+				03F603918E726D3802E166E7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				856295FE588D4CEF44F13600 /* PBXTargetDependency */,
+			);
+			name = SecureApp;
+			packageProductDependencies = (
+			);
+			productName = SecureApp;
+			productReference = B4A7B5B63200C4FBF5BB3C4C /* SecureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CA9EADF85A6AF7D36B1DA54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3AEE59F4F4BCF745352C0DDF = {
+						DevelopmentTeam = TEAMID1234;
+						ProvisioningStyle = Automatic;
+					};
+					5AA4CD2B7604E55B5E0D3DA0 = {
+						DevelopmentTeam = TEAMID1234;
+						ProvisioningStyle = Automatic;
+					};
+					69A8B40E9155C32BD6E465DC = {
+						DevelopmentTeam = TEAMID1234;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F5C31D7995D21CBBC3F2435 /* Build configuration list for PBXProject "SecureApp" */;
+			developmentRegion = "en-NZ";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"en-NZ",
+			);
+			mainGroup = A72A2175684D256A827F740E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CD37AB101CF23DE97B41345E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AEE59F4F4BCF745352C0DDF /* SecureAppKit */,
+				69A8B40E9155C32BD6E465DC /* SecureApp */,
+				5AA4CD2B7604E55B5E0D3DA0 /* SecureAppKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB6E8E1DA382BABAFABDCA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16932837955E51CAE01480A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ADA63606136D5E86D4CB0E43 /* Bundle the web app */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle the web app";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/copy-spa-bundle.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		948E18600A32E8FBDD262E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4A4A435BF2F23BB312424F /* AppMCPTests.swift in Sources */,
+				151AAB9C5933B2FBD746F813 /* AppNavTests.swift in Sources */,
+				49E05DC8776E8D9B9A7551CA /* BridgeValidationTests.swift in Sources */,
+				49779E597D0C3B934368E0EA /* ContractDriftTests.swift in Sources */,
+				E45432087001B28703BEADF1 /* Fakes.swift in Sources */,
+				6F81908D210512F2F89F83C1 /* GoldenVectorTests.swift in Sources */,
+				44B9069F3217E65FB8C6EAC9 /* LockAndStoreTests.swift in Sources */,
+				F1DD6BDBD53A11E6AD07E1C7 /* PushTests.swift in Sources */,
+				8176C3DAB45588FBD5A82B24 /* RecoveryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1830F2C634C6403E6E38473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69FD0D3FE219E2C18BC3B077 /* AppAttestDevice.swift in Sources */,
+				5EBCF83B416ACFA35E9FBB5D /* AppModel.swift in Sources */,
+				F59C6CB71240415A7D47CB9B /* AppSchemeHandler.swift in Sources */,
+				709B2C9CBCE34E89ED3A428F /* AppTab.swift in Sources */,
+				8935E4C856B7CE7D6840ECB4 /* AppWindowContent.swift in Sources */,
+				8428D17E696E4FD4A097CF0D /* BridgeHandler.swift in Sources */,
+				1F68A4D9674ABFB4DDB46826 /* Copy.swift in Sources */,
+				1EDDC157DDB7DCEBB17F956A /* Downloads.swift in Sources */,
+				219607C8453D8F4468B94D25 /* LiveSocket.swift in Sources */,
+				E93FDAF0F66CE4B596EA2D1A /* LocalMCPServer.swift in Sources */,
+				D1C021DCEC5CFE957DFF928A /* LockController.swift in Sources */,
+				64AB61C259D1F73B3F9E74C9 /* MCPController.swift in Sources */,
+				E75C794EA33A020B59CAD022 /* NativeLoadHandler.swift in Sources */,
+				340C7F4B8A5BDDF5B5FAFFFA /* PushNotifications.swift in Sources */,
+				FBF9BB94E9C3083168938191 /* RootView.swift in Sources */,
+				1F8B3EFF5ED6BAFD7912648B /* SecureAppApp.swift in Sources */,
+				5C8D1C098F33EA98270366AD /* SettingsView.swift in Sources */,
+				59F4F8E3DDE13DF3EDAFFA26 /* WebAuthenticator.swift in Sources */,
+				DAC628DEC6BA49475D805E9D /* WebController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE8F05059B81B2CEDD979AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DA0417143ADAD8A458125F /* AppBridge.swift in Sources */,
+				BF745F555399921DD24A611B /* AppClient.swift in Sources */,
+				261E1CFA9D8AD0D1F3D2B0BE /* AppLockManager.swift in Sources */,
+				79037E6598623BB21C254908 /* AppMCPHandler.swift in Sources */,
+				022E2B977417FA50D4B8B20C /* AppMCPTools.swift in Sources */,
+				AB6F8D80B2CB179F43EC6E8F /* AppNav.swift in Sources */,
+				B42AE493F1038CA9A764A997 /* AppPush.swift in Sources */,
+				F1AAA51CFE36B9A23CC72F57 /* AppRequest.swift in Sources */,
+				10133B074C156C9289FBBA9E /* Attester.swift in Sources */,
+				84B9293671537DC44EB264A3 /* ForbiddenRecovery.swift in Sources */,
+				B86B1C50F0F08609CB6D98BC /* HTTPTransport.swift in Sources */,
+				09744B406105C092895A025B /* Log.swift in Sources */,
+				2523F8426E59DCAA96C93AB1 /* MCPHTTP.swift in Sources */,
+				EB3B42230BF38D12297EDC59 /* OIDC.swift in Sources */,
+				675A67A919583682D7D30F00 /* SecureStore.swift in Sources */,
+				38502C1F95AB2999DF682009 /* SerialGate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		856295FE588D4CEF44F13600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AEE59F4F4BCF745352C0DDF /* SecureAppKit */;
+			targetProxy = 98A83BFB4D41A3272428740F /* PBXContainerItemProxy */;
+		};
+		AF61455C2A5BBE4CF7351D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AEE59F4F4BCF745352C0DDF /* SecureAppKit */;
+			targetProxy = 2BB46D3751B86DBC28A48B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C3EC91D7160A6793F49E89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EEFA8D4BAA38BBCEAEAB7F3 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TEAMID1234;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7D58F8EE86EA7EBB99AB9336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EEFA8D4BAA38BBCEAEAB7F3 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TEAMID1234;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		889D9FD21DF946BA8B12F75A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecureApp/SecureApp.Debug.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SecureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp;
+				PRODUCT_MODULE_NAME = SecureApp;
+				PRODUCT_NAME = "Secure App";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		97FE62D3201883B873513DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp.kit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		AC33FD9EA019E33C0991FA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecureApp/SecureApp.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SecureApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp;
+				PRODUCT_MODULE_NAME = SecureApp;
+				PRODUCT_NAME = "Secure App";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AD31B0D80BB64B8CA97314A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp.kit.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B729FE0138E49506A2CF63AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp.kit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		DF9BC46575505E01247BD2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.secureapp.kit.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EF9807ED104500F7C37E530 /* Build configuration list for PBXNativeTarget "SecureAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FE62D3201883B873513DF2 /* Debug */,
+				B729FE0138E49506A2CF63AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		34A3AA19998D2AA7B9AA3B76 /* Build configuration list for PBXNativeTarget "SecureAppKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9BC46575505E01247BD2F7 /* Debug */,
+				AD31B0D80BB64B8CA97314A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F5C31D7995D21CBBC3F2435 /* Build configuration list for PBXProject "SecureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D58F8EE86EA7EBB99AB9336 /* Debug */,
+				0C3EC91D7160A6793F49E89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE40649BA0F315CA495D174D /* Build configuration list for PBXNativeTarget "SecureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889D9FD21DF946BA8B12F75A /* Debug */,
+				AC33FD9EA019E33C0991FA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CA9EADF85A6AF7D36B1DA54 /* Project object */;
+}

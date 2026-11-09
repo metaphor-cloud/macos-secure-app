@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" role="img" aria-labelledby="t d">
+  <title id="t">macOS Secure App architecture</title>
+  <desc id="d">A web UI bundled in a native Mac app talks only through a bridge to Swift code, which signs every request with an App Attest key held in the Secure Enclave. A Cloudflare Worker gate admits a request only with a sign-in token from the access group and a valid assertion from a key the same person enrolled. Everything else is refused before it reaches the API.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1424"/>
+      <stop offset="1" stop-color="#101a30"/>
+    </linearGradient>
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="470" y1="0" x2="696" y2="0">
+      <stop offset="0" stop-color="#5b9dff"/>
+      <stop offset="1" stop-color="#3ecf8e"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8b9bb8"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#3ecf8e"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6edf7; }
+      .h { font-size: 20px; font-weight: 700; }
+      .t { font-size: 16px; font-weight: 600; }
+      .s { font-size: 13px; fill: #9fb0cc; }
+      .k { font-size: 13px; fill: #c9d5ea; }
+      .lbl { font-size: 12px; fill: #8b9bb8; font-weight: 600; letter-spacing: 0.04em; }
+      .panel { fill: #131d33; stroke: #26355a; stroke-width: 1.5; }
+      .box { fill: #18243f; stroke: #2c3d66; stroke-width: 1.2; }
+      .ext { fill: #141c2e; stroke: #3a4a70; stroke-width: 1.2; stroke-dasharray: 5 4; }
+      .dash { stroke: #6b7ea3; stroke-width: 1.5; stroke-dasharray: 5 5; fill: none; }
+      .line { stroke: #8b9bb8; stroke-width: 1.8; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="22" fill="url(#bg)"/>
+
+  <!-- External services -->
+  <rect class="ext" x="60" y="34" width="320" height="72" rx="12"/>
+  <text class="t" x="80" y="64">Apple App Attest</text>
+  <text class="s" x="80" y="88">Vouches for the key, once, at enrolment</text>
+
+  <rect class="ext" x="440" y="34" width="320" height="72" rx="12"/>
+  <text class="t" x="460" y="64">Metaphor ID</text>
+  <text class="s" x="460" y="88">Sign-in through the org's SSO with MFA</text>
+
+  <path class="dash" d="M220 106V150" marker-end="url(#arrow)"/>
+  <text class="lbl" x="232" y="134">ATTEST KEY</text>
+  <path class="dash" d="M480 106V150" marker-end="url(#arrow)"/>
+  <text class="lbl" x="492" y="134">SIGN IN</text>
+  <path class="dash" d="M720 106V150" marker-end="url(#arrow)"/>
+  <text class="lbl" x="732" y="134">VERIFY TOKEN</text>
+
+  <!-- Mac -->
+  <rect class="panel" x="40" y="150" width="460" height="460" rx="18"/>
+  <text class="h" x="68" y="186">Your Mac</text>
+  <text class="s" x="168" y="186">macOS 27, Full Security</text>
+
+  <rect class="box" x="70" y="206" width="400" height="84" rx="12"/>
+  <circle cx="96" cy="234" r="6" fill="#5b9dff"/>
+  <text class="t" x="112" y="240">Web UI</text>
+  <text class="s" x="96" y="268">React app bundled inside. No network of its own.</text>
+
+  <path class="line" d="M270 290V334" marker-end="url(#arrow)"/>
+  <text class="lbl" x="284" y="310">BRIDGE</text>
+  <text class="s" x="284" y="326">allow-listed /api paths only</text>
+
+  <rect class="box" x="70" y="336" width="400" height="104" rx="12"/>
+  <circle cx="96" cy="364" r="6" fill="#5b9dff"/>
+  <text class="t" x="112" y="370">Native shell (Swift)</text>
+  <text class="s" x="96" y="398">Holds the token and signs every request.</text>
+  <text class="s" x="96" y="420">Locks when the Mac locks.</text>
+
+  <path class="line" d="M270 440V486" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="lbl" x="284" y="468">SIGN</text>
+
+  <rect class="box" x="70" y="488" width="400" height="96" rx="12" stroke="#f5b54a"/>
+  <rect x="94" y="522" width="16" height="13" rx="2.5" fill="#f5b54a"/>
+  <path d="M97 522v-4a5 5 0 0 1 10 0v4" stroke="#f5b54a" stroke-width="2.2" fill="none"/>
+  <text class="t" x="122" y="534">Secure Enclave</text>
+  <text class="s" x="96" y="562">App Attest key. Never leaves this Mac.</text>
+
+  <!-- Request flow -->
+  <path d="M470 388H696" stroke="url(#flow)" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+  <text class="lbl" x="526" y="356">HTTPS</text>
+  <text class="k" x="526" y="374">token + assertion</text>
+  <text class="s" x="526" y="410">signed per request</text>
+
+  <!-- Worker -->
+  <rect class="panel" x="700" y="150" width="460" height="460" rx="18"/>
+  <text class="h" x="728" y="186">Cloudflare Worker</text>
+
+  <rect class="box" x="730" y="206" width="400" height="214" rx="12" stroke="#3ecf8e"/>
+  <text class="t" x="754" y="238">Gate on every /api request</text>
+  <g class="k">
+    <text x="754" y="272"><tspan fill="#3ecf8e" font-weight="700">✓ </tspan>Token from someone in the access group</text>
+    <text x="754" y="302"><tspan fill="#3ecf8e" font-weight="700">✓ </tspan>Key enrolled by that same person</text>
+    <text x="754" y="332"><tspan fill="#3ecf8e" font-weight="700">✓ </tspan>Signature over method, path, body, token,</text>
+    <text x="774" y="352">time, nonce and a rotating challenge</text>
+    <text x="754" y="382"><tspan fill="#3ecf8e" font-weight="700">✓ </tspan>Counter rises, so no replays</text>
+  </g>
+
+  <path class="line" d="M930 420V454" marker-end="url(#arrow)"/>
+
+  <rect class="box" x="730" y="456" width="400" height="56" rx="12"/>
+  <text class="t" x="754" y="490">Your API</text>
+  <text class="s" x="840" y="490">routes, live updates, push</text>
+
+  <rect class="box" x="730" y="528" width="190" height="56" rx="12"/>
+  <text class="k" x="752" y="561">D1: enrolled keys</text>
+  <rect class="box" x="940" y="528" width="190" height="56" rx="12"/>
+  <text class="k" x="962" y="561">Revoke a Mac instantly</text>
+
+  <!-- Refused -->
+  <rect x="40" y="636" width="1120" height="56" rx="14" fill="#2a1520" stroke="#6b2a3a" stroke-width="1.2"/>
+  <text x="68" y="671" font-size="18" font-weight="700" fill="#ff6b6b">✕</text>
+  <text class="k" x="96" y="670">Browsers, scripts, stolen tokens, other Macs and modified builds never reach your API.</text>
+</svg>

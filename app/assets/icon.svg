@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b5563"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <!-- A plain padlock: a placeholder. Replace with the app's own icon and run scripts/make-icon.sh. -->
+  <path d="M352 460V372a160 160 0 0 1 320 0v88" fill="none" stroke="#f9fafb" stroke-width="64" stroke-linecap="round"/>
+  <rect x="272" y="448" width="480" height="340" rx="64" fill="#f9fafb"/>
+  <circle cx="512" cy="580" r="44" fill="#374151"/>
+  <rect x="490" y="600" width="44" height="100" rx="22" fill="#374151"/>
+</svg>

@@ -1,0 +1,6 @@
+build/
+Resources/WebApp/
+.DS_Store
+.swiftpm/
+*.xcuserstate
+xcuserdata/

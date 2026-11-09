@@ -1,0 +1,20 @@
+{
+  "name": "secure-app",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "worker",
+    "web"
+  ],
+  "scripts": {
+    "type-check": "npm run type-check --workspaces --if-present",
+    "test": "npm test --workspaces --if-present",
+    "build:web": "npm run build -w web",
+    "generate:vectors": "npm run generate:vectors -w shared",
+    "dev:worker": "npm run dev -w worker",
+    "migrate": "npm run migrate -w worker",
+    "deploy": "npm run deploy -w worker"
+  }
+}

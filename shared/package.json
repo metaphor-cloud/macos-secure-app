@@ -1,0 +1,21 @@
+{
+  "name": "@secure-app/shared",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./request": "./src/request.ts",
+    "./bridge": "./src/bridge.ts",
+    "./logger": "./src/logger.ts"
+  },
+  "scripts": {
+    "type-check": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "generate:vectors": "node scripts/generate-vectors.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "typescript": "~5.8.0",
+    "vitest": "^4.1.12"
+  }
+}

@@ -1,0 +1,18 @@
+// Build-time configuration for Secure App on macOS. Read at run time from
+// Info.plist (AppConfig.fromBundle). Override per build on the xcodebuild
+// command line, e.g. APP_API_BASE=https://app.example.com for a deployed Worker.
+
+// The Worker every request goes to: a local one (wrangler dev) until you set
+// the deployed URL. scripts/build.sh --sign refuses to sign while this is localhost.
+APP_API_BASE = http:/$()/localhost:8787
+
+// Metaphor ID. Create the client in Metaphor ID and register the redirect URI
+// below on it. scripts/build.sh --sign refuses to sign while the client id is REPLACE_ME.
+APP_OIDC_ISSUER = https:/$()/metaphor.id
+APP_OIDC_CLIENT_ID = REPLACE_ME
+APP_OIDC_REDIRECT_URI = secureapp-mac:/$()/auth
+
+// The App ID sent as X-App-Id and at enrolment: Team ID, a period, and the
+// signing identifier (on macOS the RP ID uses the signing identifier in place
+// of the bundle id). Must equal ATTEST_APP_ID on the Worker.
+APP_ID = $(DEVELOPMENT_TEAM).$(PRODUCT_BUNDLE_IDENTIFIER)
